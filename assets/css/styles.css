@@ -1,7 +1,123 @@
+#back2Top {
+    width: 60px;
+    line-height: 60px;
+    overflow: hidden;
+    z-index: 999;
+    display: none;
+    cursor: pointer;
+    
+    position: fixed;
+    bottom: 50px;
+    right: 0;
+    background-color:lightblue;
+    color: green;
+    text-align: center;
+    font-size: 50px;
+    text-decoration: none;
+}
+#back2Top:hover {
+    background-color: skyblue;
+    color: green;
+}
+
+
+.like, .dislike {
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: normal;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    background: lightgreen;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.428571429;
+    border-radius: 4px;
+}
+.qty1, .qty2 {
+    border: none;
+    width:20px;
+    background: transparent;
+}
+
+.share-btn {
+    display: inline-block;
+    color: #ffffff;
+    border: none;
+    padding: 0.5em;
+    width: 4em;
+    box-shadow: 0 2px 0 0 rgba(0,0,0,0.2);
+    outline: none;
+    text-align: center;
+    margin-right: 20px;
+    float:right;
+
+}
+
+.share-btn:hover {
+  color: #eeeeee;
+
+}
+
+.share-btn:active {
+  position: relative;
+  top: 2px;
+  box-shadow: none;
+  color: #e2e2e2;
+  outline: none;
+}
+
+
+.share-btn.google-plus { background: #dd4b39; }
+.share-btn.facebook    { background: #3B5998; }
+.share-btn.linkedin    { background: #4875B4; }
+.share-btn.whatsapp    { background:#00E676; }
+.share-btn.instagram   {background: #DB4666}
+#overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+    cursor: pointer;
+}
+
+#text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 50px;
+    color: white;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+
+}
+
+
 .calendar{
   
-  padding-right:10px;
+  color:red;
+  margin-left: 25px;
+margin-bottom: 90px;
+  width: 700px;
+  height: 300px;
+  border: 4px #66cc66;
+  border-style: ridge;
+  border-radius: 10px;
 }
+
+
+.navbar-inverse{
+  margin-top: 20px;
+  background-color:    #66cc66;
+     border-color: darkblue;
+
+}
+
+
 
 #img{
 
@@ -14,7 +130,7 @@ body {
   /*font-family: 'Lato', arial, sans-serif;*/
   font-family: 'Timmana', sans-serif;
   color: #434343;
-  background:url("http://all4desktop.com/data_images/original/4234855-background-pattern.jpg");
+  background:url("https://static.vecteezy.com/system/resources/thumbnails/000/152/717/small/old-vintage-paper-vector-background.jpg");
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -132,7 +248,7 @@ iframe {
   margin-right: 30px;
 }
 .header .profile-content .name {
-  color: darkblue;
+  color:   #66cc66;
   font-size: 38px;
   margin-bottom: 5px;
   margin-top: 30px;
@@ -322,24 +438,11 @@ iframe {
   color: #999;
   font-weight: normal;
 }
-/* Git section */
-.github-graph {
-  margin-bottom: 30px;
-}
-.github-graph .js-calendar-graph-svg {
-  max-width: 100%;
-}
-.ghfeed {
-  height: 600px;
-}
-.ghfeed,
-.ghfeed *,
-.ghfeed *:before,
-.ghfeed *:after {
-  -webkit-box-sizing: content-box;
-  -moz-box-sizing: content-box;
-  box-sizing: content-box;
-}
+
+
+
+
+
 /* Info Section */
 .info .fa {
   margin-right: 15px;
